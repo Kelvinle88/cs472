@@ -1,0 +1,20 @@
+body {
+    background-color: bisque;
+    color: darkblue;
+    font-family: Arial;
+}
+
+strong {
+    color: red;
+}
+
+h1 {
+    font-size: xxx-large;
+    color: cornflowerblue;
+    font-family: "Arial Narrow";
+}
+
+h3 {
+    color: deepskyblue;
+    font-family: "Arial Blue";
+}
