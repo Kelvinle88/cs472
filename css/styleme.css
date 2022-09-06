@@ -21,6 +21,7 @@ dt {
 .plain {
     text-decoration: none;
     color: red;
+    display: inline-block;
 }
 
 .plain:hover {
