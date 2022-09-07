@@ -10,7 +10,7 @@ body{
     position: static;
 }
 
-#name{
+#header-banner{
     position: relative;
     left: 10px;
 }
