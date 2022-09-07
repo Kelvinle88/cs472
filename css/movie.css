@@ -2,13 +2,13 @@ h1{
     text-align: center;
 }
 body{
-    background-image: url("/img/background.png");
+    background-image: url("../img/background.png");
     background-position: initial;
     /*background-position: center;*/
 
 }
 #header{
-    background-image: url("/img/bannerbg.png");
+    background-image: url("../img/bannerbg.png");
     background-position: initial;
     background-repeat: repeat-x;
     position: static;
@@ -39,7 +39,7 @@ body{
 }
 #inside-header{
     grid-area: h;
-    background-image: url("/img/bannerbg.png");
+    background-image: url("../img/bannerbg.png");
     background-repeat: repeat-x;
     background-position: initial;
     background-size: 83px;
