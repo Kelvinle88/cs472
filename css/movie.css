@@ -3,6 +3,7 @@ h1{
 }
 body{
     background-image: url("/img/background.png");
+    background-position: center;
     background-position: initial;
     background-size: contain;
     /*background-position: center;*/
@@ -10,6 +11,9 @@ body{
 }
 #header{
     background-image: url("/img/bannerbg.png");
+    background-position: center;
+    background-position: initial;
+    background-size: contain;
     background-repeat: repeat-x;
     position: static;
 }
@@ -40,6 +44,8 @@ body{
 #inside-header{
     grid-area: h;
     background-image: url("/img/bannerbg.png");
+    background-position: center;
+    background-position: initial;
     background-repeat: repeat-x;
     background-size: 83px;
 }
