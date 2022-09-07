@@ -2,17 +2,15 @@ h1{
     text-align: center;
 }
 body{
-    /*background-image: url("/img/background.png");*/
-    background: #000 center/cover url("/img/background.png") no-repeat;
+    background-image: url("/img/background.png");
     background-position: initial;
     /*background-position: center;*/
 
 }
 #header{
-    background: #000 url("/img/bannerbg.png") repeat-x;
-    /*background-image: url("/img/bannerbg.png");*/
+    background-image: url("/img/bannerbg.png");
     background-position: initial;
-    /*background-repeat: repeat-x;*/
+    background-repeat: repeat-x;
     position: static;
 }
 
@@ -41,9 +39,8 @@ body{
 }
 #inside-header{
     grid-area: h;
-    background: #000 url("/img/bannerbg.png") repeat-x;
-    /*background-image: url("/img/bannerbg.png");
-    background-repeat: repeat-x;*/
+    background-image: url("/img/bannerbg.png");
+    background-repeat: repeat-x;
     background-position: initial;
     background-size: 83px;
 }
