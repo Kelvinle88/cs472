@@ -1,6 +1,5 @@
 var interval
 var currentAnimation
-var size
 var speed = 500
 window.onload = pageload;
 
@@ -66,19 +65,5 @@ function Stop() {
 function Changesize() {
     var getsize = document.getElementById("size").value;
     document.getElementById("text-area").style.fontSize = getsize
-
-}
-
-function ChangeSpeed() {
-    var speedcheck = document.getElementById("turbo")
-   var currentspeed = speedcheck.value;
-    if (interval) {
-        clearInterval(interval);
-    }
-    if (document.getElementById("start").disabled) {
-        interval = setInterval(function () {
-            DisplayFrame(currentAnimation);
-        }, currentspeed);
-    }
 
 }
