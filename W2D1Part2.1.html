@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>W2D1 Part 2.1</title>
+</head>
+<body>
+<form action="index.html" method="post">
+    <label>Email address</label><br>
+    <input type="text" placeholder="Enter email"><br>
+    <label>Password</label><br>
+    <input type="password" name="password" placeholder="Password"
+           pattern="^(?=.*?[a-z]*)(?=.*?[A-Z]*)(?=.*?[0-9]+).{10,}$"
+           title="Password field is at least 10 characters in length and contain at least one number and one uppercase and lowercase letter"><br>
+    <label>Home page</label><br>
+    <input type="text" name="website" placeholder="website" pattern="^https?:\/\/"
+           title="you must enter it beginning with http:// or https://"><br>
+    <input type="checkbox">
+    <label>Check me out</label><br>
+    <input type="submit">
+</form>
+</body>
+</html>

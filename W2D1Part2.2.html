@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>web form</title>
+    <link rel="stylesheet" href="css/expression.css">
+</head>
+<body>
+<div id="container">
+    <div id="navbar">
+        <a>MUM Golden Dome Market:::SRM System </a>
+        <a>Product</a>
+        <a>Supliers</a>
+        <div class="signout-container">
+            <form action="/action_page.php">
+                <label>Hello!</label>
+                <button type="submit">Sign Out</button>
+            </form>
+        </div>
+    </div>
+    <div id="main-content">
+                <h3> New Product Form</h3><br>
+        <form>
+        <div class="dx-fieldset">
+            <div class="dx-fieldset-column">
+                <div class="dx-field">
+                    <div class="dx-field-label">Product Number: <br><input type="text" ></div>
+                    <div class="dx-field-value">
+                        <div id="productnumber"></div>
+                    </div>
+                </div>
+                <div class="dx-field">
+                    <div class="dx-field-label">Name: <br><input type="text"></div>
+                    <div class="dx-field-value">
+                        <div id="name"></div>
+                    </div>
+                </div>
+                <div class="dx-field">
+                    <div class="dx-field-label">Unit Price:<br><input type="number" value="0.0"></div>
+                    <div class="dx-field-value">
+                        <div id="unitprice"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dx-fieldset-column">
+                <div class="dx-field">
+                    <div class="dx-field-label">Quantity in Stock:<br><input type="number" value="0"></div>
+                    <div class="dx-field-value">
+                        <div id="quantityinstock"></div>
+                    </div>
+                </div>
+                <div class="dx-field">
+                    <div class="dx-field-label">Supplier:<br>
+                        <select>
+                            <option value="selected">Select a supplier</option>
+                            <option>Walmart</option>
+                            <option>Hyvee</option>
+                            <option>Farm</option>
+                        </select>
+                        <div class="dx-field-value">
+                            <div id="suppliers"></div>
+                        </div>
+                    </div>
+                    <div class="dx-field">
+                        <div class="dx-field-label">Date supplied:<br><input type="date" value="yyyy-mm-dd"></div>
+                        <div class="dx-field-value">
+                            <div id="datesupplier"></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="button">
+                <button id="reset">Reset</button>
+                <button id="cancel">Cancel</button>
+                <button id="addproduct">Add Product</button>
+            </div>
+            </div>
+
+        </div>
+
+        </form>
+
+    </div>
+</div>
+</body>
+</html>
