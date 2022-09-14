@@ -1,3 +1,42 @@
+/*1.Modify this code to make a revealing module that returns an object with two methods. The
+returned object should have a add() method and a reset() method. Where the add method
+adds 1 to the counter, and the reset method set it back to zero.*/
+var add = function () {
+    var counter = 0;
+    function add(){
+        return counter + 1;
+    }
+    function reset() {
+        return counter = 0;
+    }
+    return{
+        add:add,
+        reset:reset
+    }
+}();
+console.log(add.add())
+console.log(add.reset())
+/*2./
+/*3. The add() function in question 1 always adds 1 to the counter each time it is called. Write a
+make_adder(inc) function whose return value is an add function with increment value of
+inc instead of 1. In other words your function should be able to do the following:*/
+
+var maker_add =(function (add) {
+    var counter = 0;
+    return function () {
+        var expect = counter + add
+        counter = counter + add
+        return expect;
+    }
+     function reset() {
+        counter = 0;
+    }
+});
+var add5 = maker_add(5);
+console.log(add5())
+console.log(add5())
+console.log(add5())
+
 /*5.Using the Revealing Module Pattern, write a JavaScript definition of a Module that creates an
 Employee Object with the following fields and methods:
 Private field: name
@@ -58,6 +97,8 @@ var moduleEmployee = function () {
 }()
 //test public
 console.log(moduleEmployee.IncreaseSalary(0.1))
+
+
 /*6. Write a few JavaScript instruction to make a Module extension to the module made in the
 previous question. Very important – you are not allowed to modify any of the code to facilitate
 the extension. Your extension should add a public address field and public methods
