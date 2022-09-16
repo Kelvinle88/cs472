@@ -1,0 +1,104 @@
+body{
+    background-color: lightskyblue;
+    font-family: Arial;
+    font-size: 18pt;
+}
+#container{
+    display: grid;
+    grid-template-areas: "h h h h h"
+                       "n n n n n"
+                       "s b b b b"
+                       "s b b b b"
+                       "s b b b b"
+                       "s b b b b"
+                       "f f f f f";
+}
+#header{
+    grid-area: h;
+}
+#header>img{
+    width: 100%;
+}
+#navbar{
+    grid-area: n;
+    font-size: 22px;
+    margin: auto;
+    text-align: center;
+}
+#navbar>a{
+    float: left;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 50%;
+    padding: 14px 16px;
+}
+#counter{
+    color: red;
+    font-size: 50pt;
+}
+#right-nav{
+    float: right;
+    border: none;
+    margin: 10px;
+    padding: 14px 16px;
+}
+#side{
+    grid-area: s;
+    display: flex;
+    flex-direction: row;
+    background-color: lightyellow;
+    border-radius: 20px;
+    padding: 0px;
+}
+#side ul li ol{
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px;
+}
+#main-content{
+    grid-area: b;
+    width: auto;
+    margin: auto;
+}
+#area-search{
+    background-color:gray;
+    width: 800px;
+    height: 600px;
+    position: relative;
+}
+#area-search div{
+    margin: 0;
+    padding: 6px 8px;
+    top: 30%;
+    left: 30%;
+    position: absolute;
+}
+#footer{
+    grid-area: f;
+    width: auto;
+    margin: auto;
+}
+@media screen and (max-width:600px) {
+    #container{
+        display: grid;
+        grid-template-areas: "h h"
+                         "s n"
+                         "b b"
+                         "f f";
+    }
+    #header{
+        grid-area: h;
+    }
+    #navbar{
+        grid-area: n;
+        display: flex;
+        flex-direction: column;
+    }
+    #side{
+        grid-area: s;
+    }
+    #footer{
+        grid-area: f;
+    }
+
+}
