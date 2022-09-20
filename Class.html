@@ -1,0 +1,85 @@
+<!doctype html>
+<script>
+    //1. Rewrite from function to class
+    // function Clock({ template }) {
+    //
+    //     let timer;
+    class Clock {
+        constructor({template}) {// declaring constructor of clock
+            this.template = template;
+        }
+
+        // function render() {
+        render = () => {
+            let date = new Date();
+
+            let hours = date.getHours();
+            if (hours < 10) hours = '0' + hours;
+
+            let mins = date.getMinutes();
+            if (mins < 10) mins = '0' + mins;
+
+            let secs = date.getSeconds();
+            if (secs < 10) secs = '0' + secs;
+
+            let output = this.template
+                .replace('h', hours)
+                .replace('m', mins)
+                .replace('s', secs);
+            alert(output)
+        }
+
+        // this.stop = function() { // rewrite method inside class
+        stop = () => {
+            clearInterval(this.timer);
+        };
+
+        // this.start = function() { // rewrite method inside class
+        start = () => {
+            this.render(); // defined this
+            this.timer = setInterval(() => this.render(), 1000);//defined this
+        };
+
+    }
+
+    // let clock = new Clock({template: 'h:m:s'});
+   // clock.start();
+
+    //2. Inheritance
+    //2.1
+    class Animal {
+
+        constructor(name) {
+            this.name = name;
+        }
+
+    }
+
+    class Rabbit extends Animal {
+        constructor(name) {
+            super(name);
+            this.created = Date.now();
+        }
+    }
+
+    let rabbit = new Rabbit("White Rabbit"); // Error: this is not defined
+    alert(rabbit.name);
+
+    //2.2
+    class ExtendedClock extends Clock {
+        constructor(template, precision = 1000) { // default 1000
+            super(template);
+            this._precision = precision;
+        }
+        start() {
+            this.render();
+            this.timer = setInterval(() => this.render(), this._precision);
+        }
+    }
+    let myClock = new ExtendedClock({template: 'h:m:s'}, 5000);
+    myClock.start();
+    myClock.stop();
+
+</script>
+
+</html>
