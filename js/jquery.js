@@ -12,7 +12,7 @@ function page() {
         });
     // $('#contact')[0].append(someimage[0]);
     $('.start').click(() => {
-        $('.move').animate({top: 0}, "slow");
+        $('.move').animate({top: 50}, "slow");
         $('.move').animate({left: 400}, "slow");
         $('.move').animate({top: 0}, "slow");
         $('.move').animate({left: 0}, "slow");
