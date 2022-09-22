@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <title>CS472</title>
     <link>
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="js/jquery.js"></script>
     <style>
         #nav > img {
             border-radius: 50%;
@@ -27,43 +30,76 @@
             margin: auto;
             width: auto;
         }
+        .over{
+            color: red;
+        }
+        .move {
+            background-color: yellow;
+            height: 20px;
+            width: 50px;
+            position: relative;
+        }
     </style>
 </head>
 <body>
 <div id="banner"><img src="img/banner1.jpeg"></div>
-
 <div id="nav">
     <img src="img/mypic.jpg" alt="avatar"/>
-    <h2><strong>VIET TRI, LE</strong></h2>
+    <h2 class="h2"><strong>VIET TRI, LE</strong></h2>
 </div>
 
 <div id="main-content">
     <ul>
+        <li>
         <li> Lab01-Home Page</li>
-        <li><a href="./aboutme.html">Lab02 CSS-About Me</a></li>
-        <li><a href="./tmnt.html">Lab02 CSS-TMNT</a></li>
-        <li><a href="responsive.html">Lab03-Responsive</a></li>
-        <li><a href="JsIntroLab.html">Lab04-Basic Javascript</a></li>
-        <li><a href="ASCIImation.html">Lab05-ASCIImation</a></li>
-        <li><a href="W2D1.html">Lab06-Part1:Functional Programming</a></li>
-        <li><a href="W2D1Part2.1.html">Lab06-Part 2.1</a></li>
-        <li><a href="W2D1Part2.2.html">Lab06-Part 2.2</a></li>
-        <li><a href="W2D2.html">Lab07-W2D2 Homework(Scopes)</a></li>
-        <li><a href="W2D3.js">Lab08-Closure</a></li>
-        <li><a href="cleanscreen.html">Lab09-Clean Screen</a></li>
-        <li><a href="js/inheritance.js">Lab10 - Inheritance</a></li>
+        <li><a href="./aboutme.html">W1D1 CSS-About Me</a></li>
+        <li><a href="./tmnt.html">W1D2 CSS-TMNT</a></li>
+        <li><a href="responsive.html">W1D3-Responsive</a></li>
+        <li><a href="JsIntroLab.html">W1D4-Basic Javascript</a></li>
+        <li><a href="ASCIImation.html">W1D5-ASCIImation</a></li>
+        <li> W2D1 - Functional programming and regular expressions
+        <ol><a href="W2D1.html">W2D1-Part1</a></ol>
+        <ol><a href="W2D1Part2.1.html">W2D1-Part 2.1</a></ol>
+        <ol><a href="W2D1Part2.2.html">W2D1-Part 2.2</a></ol>
+        </li>
+        <li><a href="W2D2.html">W2D2-W2D2 Homework(Scopes)</a></li>
+        <li><a href="W2D3.js">W2D3-Closure</a></li>
+        <li><a href="js/inheritance.js">W2D4 - Inheritance</a></li>
+        <li><a href="cleanscreen.html">W2D5-Clean Screen</a></li>
         <li><a href="midterm.html">Midterm</a></li>
-        <li><a href="Class.html">Classes, Constructors, and Inheritance Part 1</a></li>
-        <li><a href="bank.html">Classes, Constructors, and Inheritance Part 2</a></li>
+        <li> W3D1 Class
+        <ol><a href="Class.html">W3D1 Part 1</a></ol>
+        <ol><a href="bank.html">W3D1 Part 2</a></ol>
+        </li>
+        <li> W3D4 Homework NodeJS
+            <ol><a href="js/hello.js">W3D4 Homework Part 1</a></ol>
+            <ol><a href="js/node.js">W3D4 Homework Part 2</a></ol>
+            <ol>
+                <a href="js/my_math.js">W3D4 Homework Part 3.1</a>
+            </ol>
+            <ol>
+                <a href="js/use_my_math.js">W3D4 Homework Part 3.2</a>
+            </ol>
+            <ol>
+                <a href="js/my_car.js">W3D4 Homework Part 4.1</a>
+            </ol>
+            <ol>
+                <a href="js/use_my_car.js">W3D4 Homework Part 4.2</a>
+            </ol>
+        </li>
+        </li>
     </ul>
 </div>
 <div id="footer">
-    <div id="contact">
+    <div class="contact">
         <p>©VIET TRI, LE </p>
         <p>Maharishi International University</p>
         <p>Address: 1000N 4th Str, Fairfield,IA,52557</p>
         <p>Email: <a href="mailto:viet.le@miu.edu">viet.le@miu.edu</a></p>
     </div>
+    <p><button class="start">Start</button>
+        <button class="stop">stop</button></p>
+    <div class="move">*_*</div>
     <div id="validation-checker">
         <p>
             <a href="https://validator.w3.org/nu/?doc=https://kelvinle88.github.io/cs472/">
