@@ -1,25 +1,25 @@
 $(page);
 
 function page() {
-    // let someimage = $(
-    //     "<img>", {
-    //         id: "image",
-    //         src: "https://www.w3schools.com/w3css/img_lights.jpg"
-    //     },
-    //     "<img>", {
-    //         id: "image",
-    //         src: "https://www.w3schools.com/w3css/img_lights.jpg"
-    //     });
-    // // $('#contact')[0].append(someimage[0]);
-    // $('.start').click(() => {
-    //     $('.move').animate({top: 0}, "slow");
-    //     $('.move').animate({left: 400}, "slow");
-    //     $('.move').animate({top: 0}, "slow");
-    //     $('.move').animate({left: 0}, "slow");
-    // });
-    // $('.stop').click(() => {
-    //     $('.move').stop(true)
-    // });
+    let someimage = $(
+        "<img>", {
+            id: "image",
+            src: "https://www.w3schools.com/w3css/img_lights.jpg"
+        },
+        "<img>", {
+            id: "image",
+            src: "https://www.w3schools.com/w3css/img_lights.jpg"
+        });
+    // $('#contact')[0].append(someimage[0]);
+    $('.start').click(() => {
+        $('.move').animate({top: 0}, "slow");
+        $('.move').animate({left: 400}, "slow");
+        $('.move').animate({top: 0}, "slow");
+        $('.move').animate({left: 0}, "slow");
+    });
+    $('.stop').click(() => {
+        $('.move').stop(true)
+    });
     var textWrapper = document.querySelector('.h2');
     textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
