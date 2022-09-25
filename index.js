@@ -19,4 +19,6 @@ app.get('/output',controllerOutput)
 // app.post('/addtocart',controllerAddCart)
 app.get('/product',controllerProduct)
 
+
+
 app.listen(3000,()=>console.log("server running at port 3000"))
