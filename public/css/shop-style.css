@@ -1,0 +1,71 @@
+#container{
+    display: grid;
+    grid-template-areas:
+    "h h h h h"
+    "n n n n n"
+    "s b b b b"
+    "s b b b b"
+    "s b b b b"
+    "s b b b b"
+    "f f f f f"
+    "c c c c c";
+
+    background-color: #fff;
+    color: #1d1d1d;
+    font-family: Questrial,sans-serif;
+}
+
+a{
+    color: #8e8e8e;
+    text-decoration: none;
+}
+
+#header{
+    grid-area: h;
+    padding: 5%;
+    width: auto;
+    margin: auto;
+    text-align: center;
+}
+#nav{
+    grid-area: n;
+    background-color: #f7f7f7;
+    display: flex;
+}
+#nav a{
+    padding: 14px 16px;
+}
+#cart{
+    width: 50%;
+}
+
+#basket{
+    width: auto;
+    margin: auto;
+    margin-left: 90%;
+}
+#main-content{
+    grid-area: b;
+    width: auto;
+    margin: auto;
+    padding: 5%;
+    margin-left: 5%;
+    display: flex;
+    flex-flow: wrap;
+}
+#listing{
+    text-align: center;
+    flex: 30%;
+}
+#listing p{
+    padding: 14px 16px;
+}
+#side{
+    grid-area: s;
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    width: fit-content;
+    margin-left: 30%;
+    line-height: 200%;
+}

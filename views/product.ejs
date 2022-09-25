@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset="utf-8">
+    <title>Current time</title>
+    <script src="js/getStylesheet.js"></script>
+</head>
+<body>
+<div id="displayProduct">
+    <p><%=product.name%></p>
+    <ol><%=product.price%></ol>
+    <ol><%=product.description%></ol>
+    <ol><%=product.id%></ol>
+    <form action="/addtocart" method="post" id="addtocart">
+        <input type="hidden" name="i" value=<%=i%>>
+        <button>Add to Cart</button>
+    </form>
+</div>
+
+</body>
+</html>
