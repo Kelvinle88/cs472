@@ -5,6 +5,8 @@ subtract(x, y)
 multiply(x, y)
 divide(x, y)
 pi // constant set to 3.14*/
+let x = 0;
+let y =0;
 module.exports =
 {
     add:function(x, y) {
@@ -25,6 +27,9 @@ module.exports =
         }
         return x / y;
     },
+    moveTo:function(x,y){
+        return "("+x+","+y+")"
+    }
 };
  const pi = 3.14;
  module.exports.pi = pi;

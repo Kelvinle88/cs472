@@ -4,3 +4,4 @@ console.log("3 - 5 = " + math.subtract(3, 5));
 console.log("3 * 5 = " + math.multiply(3, 5));
 console.log("3 / 5 = " + math.divide(3, 5));
 console.log("PI = " + math.pi);
+console.log("location:"+math.moveTo(1,2))
