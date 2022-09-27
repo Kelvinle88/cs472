@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset="utf-8">
+    <title>Current time</title>
+<!--    <script src="js/getStylesheet.js"></script>-->
+</head>
+<body>
+<%for(let cartItem of items){%>
+<div id="displayProduct">
+    <p><%=cartItem.product.name%></p>
+    <ol><%=cartItem.product.id%></ol>
+    <ol><%=cartItem.product.description%></ol>
+    <ol><%=cartItem.product.price%></ol>
+    <ol><%=cartItem.quantity%></ol>
+    <%}%>
+</div>
+<span>Total:<%=total%>$</span>
+</body>
+</html>

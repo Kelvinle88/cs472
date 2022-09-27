@@ -36,13 +36,13 @@ a{
     padding: 14px 16px;
 }
 #cart{
-    width: 50%;
+    width: 30%;
 }
 
 #basket{
     width: auto;
     margin: auto;
-    margin-left: 90%;
+    margin-left: 80%;
 }
 #main-content{
     grid-area: b;

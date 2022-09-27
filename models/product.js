@@ -1,9 +1,10 @@
 module.exports = class Product{
-    constructor(name,price,description,id) {
+    constructor(name,price,description,id,quantity) {
         this.name = name;
         this.price = price;
         this.description= description;
         this.id = id;
+        this.quantity = quantity;
     }
     getName(){
         return this.name;
@@ -28,6 +29,12 @@ module.exports = class Product{
     }
     setId(id){
         this.id = id
+    }
+    getQuantity(){
+        return this.quantity;
+    }
+    setQuantity(quantity){
+        this.quantity = quantity
     }
 
 }
