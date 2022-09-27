@@ -1,4 +1,4 @@
-const products = require('../database')
+const products = require('../models/database')
 const cartItem = require('../models/cartItem')
 module.exports = (req,res)=>{
     let i = req.body.i;
