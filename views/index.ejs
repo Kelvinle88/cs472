@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset="utf-8">
+  <title>Current time</title>
+<!--  <script src="js/getStylesheet.js"></script>-->
+  <link rel="stylesheet" href="./css/shop-style.css" >
+</head>
+<body>
+<div id="header">Electronic Shop</div>
+<div id="nav">
+  <a href=<%="/"%>>Home</a>
+  <a href="/contact">Contact</a>
+<div id="basket">
+  <a href="/cart"><img id="cart" src="https://cdn-icons-png.flaticon.com/512/2838/2838895.png"></a>
+  <span id="item"><%=lengthOfItems%></span>
+</div>
+</div>
+
+<div id="side">
+  <form action="/result" method="post" name="form">
+    Name<input type="text" id="name" name="name" placeholder="Username">
+    Age<input type="text" id="age" name="age" placeholder="Age">
+    <button>Submit Query</button>
+  </form>
+</div>
+
+<div id="main-content">
+
+<%for(let i in products){%>
+<div id="display">
+  <a id="listing" href=<%="/product?num="+i%>>
+  <p><%=products[i].name%></p>
+  <p>Id:<%=products[i].id%></p>
+  <p>Description:<%=products[i].description%></p>
+  <p>Price:<%=products[i].price%></p>
+  </a>
+</div>
+<%}%>
+</div>
+
+<div id="footer"> Copyright@2022</div>
+</body>
+</html>
