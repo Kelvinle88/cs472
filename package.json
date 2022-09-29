@@ -1,0 +1,27 @@
+{
+  "name": "tmnt",
+  "version": "1.0.0",
+  "main": "W2D2.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kelvinle88/cs472.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kelvinle88/cs472/issues"
+  },
+  "homepage": "https://github.com/Kelvinle88/cs472#readme",
+  "description": "",
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "express-session": "^1.17.3",
+    "http-errors": "^2.0.0",
+    "morgan": "^1.10.0"
+  }
+}

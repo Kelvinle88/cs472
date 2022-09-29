@@ -7,10 +7,10 @@ module.exports = (req,res)=>{
     let Item = new cartItem(product,quantity)
     let Cart = req.session.items;
     if(Cart){
-        let cartItem = Cart.find(item=>item.product.id == product.id)
+        let productItem = Cart.find(item=>item.product.id == product.id)
         product.quantity -=quantity;
-        if(cartItem){
-            cartItem.quantity +=quantity
+        if(productItem){
+            productItem.quantity +=quantity
         }
         else {
             Cart.push(Item)
